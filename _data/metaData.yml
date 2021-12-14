@@ -1,0 +1,9 @@
+author: Daisuke Motohashi
+avatar_url: assets/img/CoderDojoKamiyama_Logo.png
+profile_url: assets/img/retrolux.jpg
+lightTheme: False
+show_menu_logo_on_home_page: True
+cookies:
+  enabled: False
+  message: This site might be using cookies! Customize your message or disable cookies in metaData.yml!
+  agreeButtonText: Agree
