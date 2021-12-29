@@ -17,9 +17,11 @@ title: CoderDojo Kamiyama 参加費無料のプログラミングクラブ
 tagline: CoderDojo Kamiyama Website
 email: email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This website was created as a demonstration for Jekyll custom theme
-  named minimal-categorized. Its main feature is to aggregate posts into
-  categories, witch are easily distinguishable
+  ようこそコーダー道場神山へ!!
+  ゲームを作ってみたい子、3Dプリンタでおもちゃを作ってみたい子、パソコンを思い切りさわってみたい子も、
+  皆さんプログラミングを通して、世の中にあふれるいろんなテクノロジーに挑戦してください。
+  コーダー道場神山は、徳島県神山町で2018年から開催している参加費無料のプログラミングクラブです。
+# baseurl: "/"
 # baseurl: "/minimal-categorized" # the subpath of your site, e.g. /blog
 url: "https://coderdojo.kamiyama.club" # the base hostname & protocol for your site, e.g. http://example.com
 author: Daisuke Motohashi
