@@ -49,6 +49,15 @@ menu_pages:
   tooltip: きょうざい
   description: コーダー道場にまつわる資料集
 
+- title: software
+  url: /tools.html
+  show_on_home: False
+  image_url: assets/img/category-2.jpg
+  icon_name: fa-solid fa-wand-sparkles
+  category: access
+  tooltip: software
+  description: 道場運営に便利な道具
+
 - title: About
   url: about.html
   show_on_home: False

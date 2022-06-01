@@ -1,0 +1,22 @@
+---
+layout: post
+title: QRチェックインプラグインを公開しました
+category: category-1
+image: assets/pages/02_checkin_dialog_s.png
+image_alt: プラグインの動作画面
+summary: QRコードで道場の入退室を管理できるプラグインを公開しました。
+---
+
+{%include profile.html %}
+
+こんにちは、コーダー道場神山の本橋です。
+
+QRコードで道場の入退室を管理できるプラグインをgithubに公開しました。
+
+[motohasystem / qr-checkin-plugin(github)](https://github.com/motohasystem/qr-checkin-plugin)
+
+道場当日の参加チェックをQRコードで半自動化したくて作成したものです。
+
+MITライセンスの元、無料でお使いいただけます。
+
+よかったら使ってみてください。
