@@ -13,9 +13,9 @@ category: software
 
 iPadをQRチェックイン/チェックアウト端末化するkintoneプラグインです。
 
-kitnoneに適用することで、QRコード読み取り機能を備えたチェックポイント端末化します。
+kitnoneに適用することで、QRコード読み取り機能を備えたチェックポイント端末化します。カメラ付きのノートPCやiPadなどでご利用ください。
 
-このプラグインは、カメラ付きのノートPCやiPadなどタブレット端末上の使用を想定しています。
+ダイアログをフルスクリーン化しているため、kintoneであることを隠して稼働させておくことができます。
 
 <video witdh="600px" height="363px" muted playsinline src="assets/pages/QRCheckinPlugin.mp4" poster="assets/pages/02_checkin_dialog_s.png" controls>![](assets/pages/02_checkin_dialog_s.png)</video>
 
