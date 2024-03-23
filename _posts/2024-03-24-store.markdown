@@ -1,0 +1,20 @@
+---
+layout: post
+title: 公式アイテムストア公開
+category: category-1
+image: assets/pages/images/02_coderdojo神山_square.png
+image_alt: ロゴ画像
+summary: 500円または1000円をコーダー道場神山に支援できる<a href="https://suzuri.jp/motohasystem">公式ストア</a>を公開しました！
+---
+
+{%include profile.html %}
+
+こんにちは、コーダー道場神山の本橋です。
+
+公式ロゴ入りのグッズを購入しながら、500円または1000円をコーダー道場神山にご支援いただける公式ストアを公開しました！
+
+こちらで商品をご購入いただくことでコーダー道場神山の活動にご支援いただけます。
+
+Tシャツから帽子からトートバッグまで、お気に召されましたアイテムが見つかればぜひご購入ください！
+
+<a href="https://suzuri.jp/motohasystem">公式ストア</a>
