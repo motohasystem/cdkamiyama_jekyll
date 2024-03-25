@@ -37,3 +37,11 @@ ul > li.bsky-msg > a {
 .bluesky-timeline-anchor {
     font-size: 0.8em;
 }
+
+.image_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
