@@ -1,0 +1,39 @@
+
+ul.bluesky-timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 8fr; /* 4frから3frに変更して横幅を狭くする */
+  list-style-type: none; /* リストマーカーを非表示にする */
+  align-items: center;
+  column-gap: 0em; /* カラム間のスペースを設定 */
+  row-gap: 0.4em;
+}
+
+ul > li.bsky-date {
+  font-size: 0.8em;
+  color: #666;
+  text-align: center; /* 中央揃えに変更 */
+  width: 100%; /* セルの大きさを最大まで大きくする */
+  height: 100%;
+  background-color: #333333; /* 背景色を灰色に変更 */
+  border: 2px solid #07559a; /* 外枠に青い線を追加 */
+}
+
+ul > li.bsky-msg {
+  font-size: 0.8em;
+  color: #fff;
+  text-align: left; /* 左揃えに変更 */
+  /* margin-bottom: 1em; */
+  width: 100%; /* セルの大きさを最大まで大きくする */
+  height: 100%;
+  background-color: #333333; /* 背景色を灰色に変更 */
+  border: 2px solid #07559a; /* 外枠に青い線を追加 */
+}
+
+ul > li.bsky-msg > a {
+    color: #aaf;
+    text-decoration: underline;
+}
+
+.bluesky-timeline-anchor {
+    font-size: 0.8em;
+}

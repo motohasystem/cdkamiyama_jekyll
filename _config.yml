@@ -48,3 +48,4 @@ exclude:
 
 future: true
 timezone: Asia/Tokyo
+default_lang: 'ja'
