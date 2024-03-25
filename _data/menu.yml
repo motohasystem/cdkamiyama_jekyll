@@ -17,7 +17,7 @@ menu_pages:
   url: /category-1.html
   show_on_home: True
 #   image_url: assets/img/category-1.jpg
-  image_url: assets/img/kawauso_pc.webp
+  image_url: assets/img/kawauso_pc_s.png
   icon_name: fas fa-user-ninja
   category: category-1
   tooltip: いつもさんかしている
@@ -27,7 +27,7 @@ menu_pages:
   url: /category-2.html
   show_on_home: True
 #   image_url: assets/img/category-2.jpg
-  image_url: assets/img/kawauso_hello.webp
+  image_url: assets/img/kawauso_hello_s.png
   icon_name: fas fa-child
   category: category-2
   tooltip: はじめてさんかする
