@@ -27,7 +27,7 @@ menu_pages:
   url: /category-2.html
   show_on_home: True
 #   image_url: assets/img/category-2.jpg
-  image_url: assets/img/kawauso_hello_s.png
+  image_url: assets/img/tako_pc.png
   icon_name: fas fa-child
   category: category-2
   tooltip: はじめてさんかする
