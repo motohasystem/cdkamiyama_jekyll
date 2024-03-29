@@ -1,0 +1,13 @@
+
+h3 a {
+    text-decoration: underline #4fc2f7;
+}
+
+
+img[src*='#center'] { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

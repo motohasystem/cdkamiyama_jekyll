@@ -9,22 +9,50 @@ category: category-3
 
 ---
 
+
 # オンライン教材
 
-### Scratch
-[https://scratch.mit.edu/](https://scratch.mit.edu/)
+コーダー道場神山であそべるオンライン教材です。遊び方はメンターにきいてくださいね！
 
-### viscuit
-[https://viscuit.com/](https://viscuit.com/)
+## 保護者の方へ
 
-### Hack for Play
-[https://www.hackforplay.xyz/](https://www.hackforplay.xyz/)
+道場で遊んだつづきは、おうちのパソコンでも遊べます。保護者の方も一緒に取り組もう！（主におうちの環境づくりをお願いします）
 
-### Whyプログラミング(NHK)
-[http://www.nhk.or.jp/gijutsu/programming/](http://www.nhk.or.jp/gijutsu/programming/)
 
-### Tinkercad
-[https://www.tinkercad.com](https://www.tinkercad.com)
+## 無料
+
+### [Scratch（スクラッチ）](https://scratch.mit.edu/){:target="_blank"}
+
+ブロックの組み合わせでコーディングするプログラミング言語です。ぜんぶ自分でプログラミングするもよし。世界中の人達が作ったプログラムで遊びながら、自分用にカスタマイズして遊ぶもよし。
+
+[![scratch](assets/img/capture_scratch_s.png#center)](https://scratch.mit.edu/){:target="_blank"}
+
+### [viscuit（ビスケット）](https://www.viscuit.com/){:target="_blank"}
+
+マウスで描いた絵を「メガネ」で動かそう！　ひらがなが読めない未就学児も夢中になれるプログラミング言語です。
+
+[![viscuit](assets/img/capture_viscuit_s.png#center)](https://www.viscuit.com/){:target="_blank"}
+
+### [Tinkercad（ティンカーキャド）](https://www.tinkercad.com){:target="_blank"}
+
+ブラウザで3Dモデリング！　無料で使えるのに本格的な3Dモデルが作れるし、つくった3Dモデルはそのまま3Dプリンタでプリントアウトもできます。
+
+[![tinkercad](assets/img/capture_tinkercad_s.png#center)](https://www.tinkercad.com){:target="_blank"}
+
+
+
+## 一部無料
+
+### [Hack for Play（ハックフォープレイ）](https://www.hackforplay.xyz/){:target="_blank"}
+
+ゲームの世界に飛び込んで、プログラムを書き換えて敵を倒せ！　という遊び方もできるし、自分でゲームを作ることもできるし、誰かが作ったゲームを遊ぶこともできます。
+
+
+## 動画コンテンツ
+
+### [Whyプログラミング(NHK)](https://www.nhk.or.jp/school/sougou/programming/){:target="_blank"}
+
+厚切りジェイソンが登場するNHKのテレビ番組です。Scratchやviscuitでジェイソンといっしょに遊べる動画がたくさんあります。
 
 ---
 
