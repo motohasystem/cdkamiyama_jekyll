@@ -27,3 +27,7 @@ img[src*='#center'] {
 strong {
     color: #4ff2c7;
 }
+
+p {
+    margin-bottom: 20px;
+}
