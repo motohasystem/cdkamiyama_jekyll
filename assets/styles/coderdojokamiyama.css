@@ -23,3 +23,7 @@ img[src*='#center'] {
     margin-bottom: 30px;
     max-width: 80%;
 }
+
+strong {
+    color: #4ff2c7;
+}

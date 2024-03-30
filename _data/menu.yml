@@ -18,7 +18,7 @@ menu_pages:
   show_on_home: True
 #   image_url: assets/img/category-1.jpg
   image_url: assets/img/kawauso_pc_s.png
-  icon_name: fas fa-user-ninja
+  icon_name: fa-solid fa-otter
   category: category-1
   tooltip: いつもさんかしている
   description: いつもコーダー道場神山に参加しているニンジャ・保護者・メンターの方はこちらへどうぞ
@@ -28,7 +28,7 @@ menu_pages:
   show_on_home: True
 #   image_url: assets/img/category-2.jpg
   image_url: assets/img/tako_pc.png
-  icon_name: fas fa-child
+  icon_name: fa-brands fa-octopus-deploy
   category: category-2
   tooltip: はじめてさんかする
   description: これからコーダー道場に参加したい子や、子供と一緒に通いたい保護者、メンター希望の方はこちらへどうぞ

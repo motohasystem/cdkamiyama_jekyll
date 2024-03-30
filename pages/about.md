@@ -12,6 +12,41 @@ category: about
 
 {{ site.data.menu.menu_intro }}
 
+## コーダー道場神山の方針について
+
+コーダー道場で「**やってみたいこと**」があればなんでもおきがるに相談してください。あなたの「**やってみたい**」を全力でサポートします。
+
+どうぞ遠慮しないで、「**やってみたい**」をぶつけてください。チャンピオンもメンターもあなたを全力でお応えします。
+
+
+### プログラミング
+
+**Scratch**でも**viscuit**でも、
+
+**python**でも**JavaScript**でも、
+
+**IchigoJAM**でも**Unity**でも、
+
+**スマホアプリ**でも**AIプログラミング**でも、
+
+あらゆる方面のプログラミングに挑戦してください。
+
+
+### デジタル体験
+
+**Minecraft**のサバイバルもクリエイティブも、
+
+**Youtube**を見るのも配信するのも、
+
+**タイピング練習**も**ブログを書く**のも、
+
+**3Dスキャン**も**3Dプリント**も、
+
+もちろんひたすら**ゲーム**をプレイするのも、
+
+パソコンを通して触れられるすべての体験がここには揃っています。
+
+
 
 ## こんなひとが運営しています
 
@@ -27,12 +62,12 @@ category: about
 
 ## あなたがDojoに来る理由は何ですか？ - YouTube
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gLDue2xb1j8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gLDue2xb1j8?si=tuISI4BMznEPEQYH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## CoderDojoってなんかのおぅ？ (What is CoderDojo 広島弁) - YouTube
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VEcFnEYT6mQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VEcFnEYT6mQ?si=3wdN1mAoE3zOFazq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## コーダー道場神山への参加方法
