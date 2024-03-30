@@ -9,7 +9,6 @@ category: category-3
 
 ---
 
-
 # オンライン教材
 
 コーダー道場神山であそべるオンライン教材です。遊び方はメンターにきいてくださいね！
@@ -19,7 +18,7 @@ category: category-3
 道場で遊んだつづきは、おうちのパソコンでも遊べます。保護者の方も一緒に取り組もう！（主におうちの環境づくりをお願いします）
 
 
-## 無料
+## 無料であそべる教材
 
 ### [Scratch（スクラッチ）](https://scratch.mit.edu/){:target="_blank"}
 
@@ -41,7 +40,14 @@ category: category-3
 
 
 
-## 一部無料
+## 一部無料であそべる教材
+
+### [Minecraft Education Edition(マインクラフト教育版)](https://education.minecraft.net/ja-jp){:target="_blank"}
+
+理科やプログラミングを学べる小学生～中学生向けのマインクラフトです。一部無料であそべる体験版もあります。（[【無料】教育版マイクラ（Minecraft Education）を体験する方法](https://papu-navi.com/minecraft-education/){:target="_blank"}）
+
+[![minecraftee](assets/img/capture_minecraftee_s.png#center)](https://education.minecraft.net/ja-jp){:target="_blank"}
+
 
 ### [Hack for Play（ハックフォープレイ）](https://www.hackforplay.xyz/){:target="_blank"}
 
