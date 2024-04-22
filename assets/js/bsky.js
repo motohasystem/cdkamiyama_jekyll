@@ -61,14 +61,15 @@
     // nodeのinnerTextを分析して、URLと思われる部分をリンクに変換する
     function insert_link(node) {
         const text = node.innerText;
-        const urlRegex = /(https?:\/\/[^\s]+)/g;
+        // const urlRegex = /(https?:\/\/[^\s]+)/g;
+        const urlRegex = /([\w.-]+\/[\w\/.-]+)/g;
         const urls = text.match(urlRegex);
         if (urls == null) return node;
 
         urls.forEach((url) => {
             const link = document.createElement("a");
-            link.href = url;
-            link.textContent = url;
+            link.href = "https://" + url;
+            link.textContent = "https://" + url;
             node.innerHTML = node.innerHTML.replace(url, link.outerHTML);
         });
 
