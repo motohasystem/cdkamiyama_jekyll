@@ -11,6 +11,7 @@ category: home
         {{ page.title }}
     </h1>
     <p class="page-summary">{{ page.summary }}</p>
+    <p class="page-summary">最新の活動については、<a href="{{ page.url_note }}">noteの活動報告</a>と、<a href="{{ page.url_bluesky }}">SNS(bluesky)の情報</a>をフォローしてください。<br/><a href="{{ page.url_goods }}">公式グッズの購入</a>を通してのご支援もよろしく！</p>
     <div class="category_wrapper">
     {% for menu_item in site.data.menu.menu_pages %}
         {% if menu_item.show_on_home %}

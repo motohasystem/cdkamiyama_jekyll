@@ -7,76 +7,76 @@ minimal_menu: True
 menu_logo: assets/img/avatar.png
 
 menu_pages:
-- title: Home
-  url: /
-  show_on_home: False
-  icon_name: fas fa-home
-  category: home
+    - title: Home
+      url: /
+      show_on_home: False
+      icon_name: fas fa-home
+      category: home
 
-- title: いつものかた
-  url: /category-1.html
-  show_on_home: True
-#   image_url: assets/img/category-1.jpg
-  image_url: assets/img/kawauso_pc_s.png
-  icon_name: fa-solid fa-otter
-  category: category-1
-  tooltip: いつもさんかしている
-  description: いつもコーダー道場神山に参加しているニンジャ・保護者・メンターの方はこちらへどうぞ
+    - title: いつものかた
+      url: /category-1.html
+      show_on_home: True
+      #   image_url: assets/img/category-1.jpg
+      image_url: assets/img/kawauso_pc_s.png
+      icon_name: fa-solid fa-otter
+      category: category-1
+      tooltip: いつもさんかしている
+      description: いつもコーダー道場神山に参加しているニンジャ・保護者・メンターの方はこちらへどうぞ
 
-- title: はじめてのかた
-  url: /category-2.html
-  show_on_home: True
-#   image_url: assets/img/category-2.jpg
-  image_url: assets/img/tako_pc.png
-  icon_name: fa-brands fa-octopus-deploy
-  category: category-2
-  tooltip: はじめてさんかする
-  description: これからコーダー道場に参加したい子や、子供と一緒に通いたい保護者、メンター希望の方はこちらへどうぞ
+    - title: はじめてのかた
+      url: /category-2.html
+      show_on_home: True
+      #   image_url: assets/img/category-2.jpg
+      image_url: assets/img/tako_pc.png
+      icon_name: fa-brands fa-octopus-deploy
+      category: category-2
+      tooltip: はじめてさんかする
+      description: これからコーダー道場に参加したい子や、子供と一緒に通いたい保護者、メンター希望の方はこちらへどうぞ
 
-- title: 参加方法とアクセス
-  url: /access.html
-  show_on_home: False
-  image_url: assets/img/category-2.jpg
-  icon_name: fas fa-map-marker-alt
-  category: access
-  tooltip: さんかほうほう、地図
-  description: コーダー道場神山を開催している会場のご案内です。
+    - title: 参加方法とアクセス
+      url: /access.html
+      show_on_home: False
+      image_url: assets/img/category-2.jpg
+      icon_name: fas fa-map-marker-alt
+      category: access
+      tooltip: さんかほうほう、地図
+      description: コーダー道場神山を開催している会場のご案内です。
 
-- title: 教材とリンク集
-  url: /materials.html
-  show_on_home: False
-  image_url: assets/img/category-2.jpg
-  icon_name: fas fa-book
-  category: access
-  tooltip: きょうざい
-  description: コーダー道場にまつわる資料集
+    - title: 教材とリンク集
+      url: /materials.html
+      show_on_home: False
+      image_url: assets/img/category-2.jpg
+      icon_name: fas fa-book
+      category: access
+      tooltip: きょうざい
+      description: コーダー道場にまつわる資料集
 
-- title: workshop
-  url: /workshops.html
-  show_on_home: False
-  image_url: assets/img/category-2.jpg
-  icon_name: fa-solid fa-wand-sparkles
-  category: access
-  tooltip: とくべつじゅぎょう
-  description: 特別授業と研修活動
+    - title: workshop
+      url: /workshops.html
+      show_on_home: False
+      image_url: assets/img/category-2.jpg
+      icon_name: fa-solid fa-wand-sparkles
+      category: access
+      tooltip: とくべつじゅぎょう
+      description: 特別授業と研修活動
 
-- title: About
-  url: about.html
-  show_on_home: False
-  icon_name: fas fa-question-circle
-  category: about
-  tooltip: 運営について
+    - title: About
+      url: about.html
+      show_on_home: False
+      icon_name: fas fa-question-circle
+      category: about
+      tooltip: 運営について
 
 menu_contacts:
-- faicon: fas fa-sticky-note
-  url: https://note.mu/cdkamiyama
-  target: _blank
-- faicon: fab fa-twitter
-  url: https://twitter.com/cdkamiyama
-  target: _blank
-- faicon: fab fa-facebook
-  url: https://www.facebook.com/CDKamiyama/
-  target: _blank
-- faicon: fas fa-envelope
-  url:
-  target: 
+    - faicon: fas fa-sticky-note
+      url: https://note.mu/cdkamiyama
+      target: _blank
+    - faicon: fab fa-twitter
+      url: https://twitter.com/cdkamiyama
+      target: _blank
+    - faicon: fab fa-facebook
+      url: https://www.facebook.com/CDKamiyama/
+      target: _blank
+    - faicon: fas fa-envelope
+      url:
+      target:
