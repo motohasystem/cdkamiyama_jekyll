@@ -1,7 +1,7 @@
 ---
 title: グッズ / Goods
 layout: category-aggregator
-permalink: store.html
+permalink: goods.html
 category: category-3
 ---
 

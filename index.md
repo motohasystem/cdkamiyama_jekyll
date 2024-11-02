@@ -6,5 +6,5 @@ category: home
 image: /assets/img/CoderDojoKamiyama_Logo_s.png
 url_note: https://note.com/cdkamiyama/
 url_bluesky: https://bsky.app/profile/coderdojo.kamiyama.club
-url_goods: store.html
+url_goods: goods.html
 ---
