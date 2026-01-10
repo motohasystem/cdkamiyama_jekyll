@@ -1,15 +1,16 @@
 h1 {
-    text-transform: uppercase;
+    font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 700;
     text-rendering: optimizeLegibility;
-    color: $primary;
+    color: $secondary;
     text-align: center;
-    font-size: 2.5em;
-    letter-spacing: -1px;
+    font-size: 2.2em;
+    letter-spacing: 0.02em;
     padding: 0.5em;
 }
 
-h2, h2, h3 a {
+h2, h3, h3 a {
+    font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 700;
     font-size: 1.4em;
     line-height: 1.4em;
@@ -20,14 +21,17 @@ h2, h2, h3 a {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    line-height: 1.7em;
+    line-height: 1.8em;
 }
+
 body {
     font-size: 16px;
-    color: $base-white;
-    font-family: 'Jost',Arial,sans-serif;
+    color: $p_text;
+    font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: $main-bg-color;
 }
+
 main {
     .content-container {
         margin: 0px auto;
@@ -47,13 +51,52 @@ main {
         }
     }
 }
+
 a {
     text-decoration-line: none;
-    color: inherit;
+    color: $primary;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: $secondary;
+    }
 }
 
 a, p, li {
-    font-size: 1.1em;
+    font-size: 1.05em;
+}
+
+// 見出しの装飾
+h2 {
+    position: relative;
+    padding-left: 1em;
+    margin: 1.5em 0 0.8em;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 70%;
+        background: linear-gradient(180deg, $primary, $secondary);
+        border-radius: 2px;
+    }
+}
+
+// カード風の共通スタイル
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba($primary, 0.2);
+    border-radius: 12px;
+    padding: 1.5em;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba($primary, 0.3);
+    }
 }
 
 @include mobile {
@@ -61,12 +104,12 @@ a, p, li {
         font-size: 15px;
     }
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     main {
         .content-container {
             width: 100%;
-            padding: 0px 9px 12px;
+            padding: 0px 12px 12px;
         }
     }
 }

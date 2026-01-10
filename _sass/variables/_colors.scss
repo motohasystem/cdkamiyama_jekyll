@@ -1,25 +1,36 @@
-$base-white: #fafafa;
-$main-bg-color: #162129;
+// CoderDojo神山 - モノトーン背景 + ロゴカラー
+// 白黒ベースにシアンブルーと桜ピンクのアクセント
 
-$primary: #4fc2f7;
-$p_light: #81d3fa;
-$p_lighter_less: #81d3fa;
-$p_lighter: #b3e4fc;
-$p_lightest: #e1f5fe;
-$p_dark: #09a7f4;
-$p_darker: #0986d0;
-$p_darkest: #07559a;
+$base-white: #f5f5f5;
+$main-bg-color: #1a1a1a;  // ほぼ黒
 
-$dark: #162129;
+// プライマリ - シアンブルー（川・木）
+$primary: #5eb8d9;
+$p_light: #7fcce8;
+$p_lighter_less: #9adaf0;
+$p_lighter: #b8e6f5;
+$p_lightest: #d8f2fa;
+$p_dark: #4a9fc2;
+$p_darker: #3686a8;
+$p_darkest: #256d8e;
 
-$secondary: #f7844f;
-$s_light: #faa682;
-$s_lighter: #fdc9b3;
-$s_lightest: #fbe8e4;
-$s_dark: #001970;
+$dark: #1a1a1a;
 
-$p_text: #ecf8ff;
-$p_text_dimmed: #5e8ca7;
+// セカンダリ - 桜ピンク
+$secondary: #e8a0b8;
+$s_light: #f0b8c8;
+$s_lighter: #f5ccd8;
+$s_lightest: #fae0e8;
+$s_dark: #d888a0;
+
+// アクセント - グレー
+$accent: #404040;
+$a_light: #606060;
+$a_dark: #2a2a2a;
+
+// テキストカラー
+$p_text: #f0f0f0;
+$p_text_dimmed: #909090;
 $s_text: #ffffff;
 
-$post_content_bg_color: #fff;
+$post_content_bg_color: #ffffff;

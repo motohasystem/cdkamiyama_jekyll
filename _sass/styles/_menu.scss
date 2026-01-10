@@ -1,6 +1,6 @@
 .menu {
     $root: &;
-    background-image: linear-gradient(142deg, $dark 0%, $p_darkest 45%, $dark 90%);
+    background: darken($dark, 3%);
     position: fixed;
     left: 0;
     top: 0;
@@ -12,14 +12,16 @@
     float: left;
     width: $menu-size;
     box-sizing: border-box;
-    border-right: 2px solid $dark;
-    
+    border-right: 1px solid rgba($primary, 0.15);
+
     @include mobile {
         flex-direction: row;
         width: 100%;
         height: $menu-size;
+        border-right: none;
+        border-bottom: 1px solid rgba($primary, 0.15);
     }
-    
+
     &-top {
         box-sizing: border-box;
         height: 100%;
@@ -33,6 +35,7 @@
             padding: 3px 10px 3px 10px;
         }
     }
+
     ul {
         @include mobile {
             display: flex;
@@ -40,51 +43,63 @@
             margin: 0;
         }
         padding-left: 0px;
+        list-style: none;
+
         li {
             display: flex;
             height: 50px;
-            justify-content:center;
+            justify-content: center;
             position: relative;
 
             a {
-                align-items:center;
-                color: $p_text;
+                align-items: center;
+                color: $p_text_dimmed;
                 cursor: pointer;
                 display: flex;
                 font-weight: 400;
                 justify-content: center;
                 letter-spacing: 1px;
                 line-height: 28px;
+                transition: all 0.3s ease;
+                border-radius: 8px;
+                margin: 2px 4px;
+                padding: 0 8px;
+
                 &:hover {
-                    font-weight: 900;
-                    color: $p_lighter;
-
-                }
-                &.selected {
+                    font-weight: 500;
                     color: $primary;
+                    background: rgba($primary, 0.1);
+                }
 
-                    &::before{
+                &.selected {
+                    color: $secondary;
+                    background: rgba($primary, 0.12);
+
+                    &::before {
                         content: "";
                         display: block;
-                        width: 2px;
-                        height: 100%;
-                        background-color: $primary;
+                        width: 3px;
+                        height: 60%;
+                        background: linear-gradient(180deg, $primary, $secondary);
                         position: absolute;
-                        left: -2px;
-                        top: 0px;
-                        box-shadow: $primary 4px 0px 22px;
+                        left: 0;
+                        top: 20%;
+                        border-radius: 2px;
+
                         @include mobile {
-                            height: 2px;
-                            width: 100%;
-                            top: -2px;
-                            left: 0;
+                            height: 3px;
+                            width: 60%;
+                            top: auto;
+                            bottom: 0;
+                            left: 20%;
                         }
                     }
                 }
+
                 @include mobile {
                     height: calc(#{$menu-size} - 10px);
                     width: $menu-size;
-                    font-size: 30px;
+                    font-size: 28px;
                 }
 
                 i {
@@ -95,29 +110,33 @@
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
         padding: 0.5em;
+        color: $secondary;
     }
 
     h2 {
-        color: darken($color: $s_text, $amount: 25);
+        color: $p_text_dimmed;
         font-weight: 400;
-        font-size: 1.1em;
+        font-size: 1em;
         line-height: 1.3;
     }
-    
 
     &-contact {
-        display:flex;
-        justify-content:center;
+        display: flex;
+        justify-content: center;
         margin-bottom: 20px;
         flex-wrap: wrap;
-        @include mobile{
+        gap: 8px;
+
+        @include mobile {
             font-size: 16px;
             max-height: $menu-size;
             margin-bottom: 0;
             display: inline-grid;
             grid-template-rows: 50% 50%;
+            gap: 4px;
+
             a:nth-child(odd) {
                 grid-row-start: 1;
             }
@@ -128,17 +147,20 @@
                 margin-top: 13px;
             }
         }
+
         a {
-            color: $p_text;
-            cursor:pointer;
-            text-align:left;
-            text-size-adjust:100%;
-            user-select:none;
-            margin-left: 4px;
-            margin-right: 4px;
+            color: $p_text_dimmed;
+            cursor: pointer;
+            text-align: left;
+            text-size-adjust: 100%;
+            user-select: none;
+            transition: all 0.3s ease;
+            padding: 4px;
+            border-radius: 4px;
+
             &:hover {
-                font-weight: 900;
-                color: $p_lighter;
+                color: $secondary;
+                background: rgba($primary, 0.1);
             }
         }
     }
@@ -147,16 +169,19 @@
 .is-minimal-menu {
     .menu {
         width: $minimal-menu-size;
+
         @include mobile {
             height: $minimal-menu-size;
             width: 100%;
         }
+
         ul {
             li {
                 a {
                     i {
                         margin: 0;
                     }
+
                     @include mobile {
                         height: calc(#{$minimal-menu-size} - 10px);
                         width: $minimal-menu-size;

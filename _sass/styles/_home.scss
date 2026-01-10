@@ -1,4 +1,4 @@
-$image-dim: 192px;
+$image-dim: 180px;
 
 .home {
     display: flex;
@@ -7,33 +7,50 @@ $image-dim: 192px;
     justify-content: space-between;
     align-items: flex-start;
     color: $p_text;
+
     .page-summary {
         flex: 0;
         width: 100%;
         text-align: center;
+        font-size: 1.1em;
+        line-height: 1.9em;
+        margin-bottom: 1em;
+
+        a {
+            color: $secondary;
+            text-decoration: underline;
+            text-decoration-color: rgba($secondary, 0.4);
+            text-underline-offset: 3px;
+
+            &:hover {
+                text-decoration-color: $secondary;
+            }
+        }
     }
+
     h1 {
         flex: 0;
         margin: auto;
         display: flex;
         align-items: center;
+        color: $secondary;
     }
-    a {
-        &:hover {
-            text-decoration: underline $primary;
-        }
-    }
+
     .category {
         &_wrapper {
             margin-top: 2em;
             flex: 1;
             width: 100%;
             display: flex;
+            gap: 2em;
+
             @include mobile {
                 flex-direction: column;
-                margin-top: 1em;
+                margin-top: 1.5em;
+                gap: 1.5em;
             }
         }
+
         &_container {
             display: flex;
             flex-direction: column;
@@ -42,71 +59,89 @@ $image-dim: 192px;
             justify-content: flex-start;
             align-items: center;
             box-sizing: border-box;
-            transition: .5s ease;
-            padding-left: 2em;
-            padding-right: 2em;
-            @include mobile {
-                padding-left: 0;
-                padding-right: 0;
-                padding-top: 2em;
+            transition: all 0.4s ease;
+            padding: 2em 1.5em;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba($primary, 0.15);
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.06);
+                border-color: rgba($primary, 0.3);
+                transform: translateY(-4px);
             }
-            &:first-of-type {
-                border-right: 1px solid $base-white;
-                @include mobile {
-                    padding-bottom: 2em;
-                    padding-top: 0;
-                    border-right: none;
-                    border-bottom: 1px solid $base-white;
-                }
+
+            @include mobile {
+                padding: 1.5em 1em;
             }
         }
+
         &_image {
             justify-content: center !important;
             display: flex;
-            height: $image-dim * 1.4;
+            height: $image-dim * 1.2;
             align-items: center;
+
             @include mobile {
-                height: $image-dim * 1.1;
+                height: $image-dim;
             }
+
             a {
                 display: block;
                 width: $image-dim;
                 height: $image-dim;
                 border-radius: 50%;
-                border: 2px solid $p_light;
+                border: 3px solid rgba($primary, 0.4);
                 overflow: hidden;
-                transition: .5s ease;
+                transition: all 0.4s ease;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+
                 &:hover {
-                    height: $image-dim * 1.2;
-                    width: $image-dim * 1.2;
+                    height: $image-dim * 1.08;
+                    width: $image-dim * 1.08;
+                    border-color: $secondary;
+                    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
                 }
             }
+
             img {
                 height: $image-dim;
                 width: $image-dim;
                 object-fit: cover;
-                transition: .5s ease;
-                opacity: 0.85;
+                transition: all 0.4s ease;
+
                 &:hover {
-                    height: $image-dim * 1.2;
-                    width: $image-dim * 1.2;
+                    height: $image-dim * 1.08;
+                    width: $image-dim * 1.08;
                 }
             }
         }
+
         &_description {
             text-align: center;
 
+            h2 {
+                color: $p_light;
+                margin: 0.5em 0;
+                padding-left: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            p {
+                color: $p_text_dimmed;
+                font-size: 0.95em;
+            }
         }
+
         display: flex;
         flex: 0 100%;
-        opacity: 0.7;
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         backface-visibility: hidden;
-        @include mobile {
-            opacity: 0.25;
-        }
     }
 
     .avatar_container {
