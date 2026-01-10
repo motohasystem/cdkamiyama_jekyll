@@ -1,42 +1,4 @@
-
-ul.bluesky-timeline-item {
-  display: grid;
-  grid-template-columns: 1fr 8fr; /* 4frから3frに変更して横幅を狭くする */
-  list-style-type: none; /* リストマーカーを非表示にする */
-  align-items: center;
-  column-gap: 0em; /* カラム間のスペースを設定 */
-  row-gap: 0.4em;
-}
-
-ul > li.bsky-date {
-  font-size: 0.8em;
-  color: #666;
-  text-align: center; /* 中央揃えに変更 */
-  width: 100%; /* セルの大きさを最大まで大きくする */
-  height: 100%;
-  background-color: #333333; /* 背景色を灰色に変更 */
-  border: 2px solid #07559a; /* 外枠に青い線を追加 */
-}
-
-ul > li.bsky-msg {
-  font-size: 0.8em;
-  color: #fff;
-  text-align: left; /* 左揃えに変更 */
-  /* margin-bottom: 1em; */
-  width: 100%; /* セルの大きさを最大まで大きくする */
-  height: 100%;
-  background-color: #333333; /* 背景色を灰色に変更 */
-  border: 2px solid #07559a; /* 外枠に青い線を追加 */
-}
-
-ul > li.bsky-msg > a {
-    color: #aaf;
-    text-decoration: underline;
-}
-
-.bluesky-timeline-anchor {
-    font-size: 0.8em;
-}
+/* CoderDojo神山 - モノトーン背景 + ロゴカラー */
 
 .image_center {
   display: flex;
@@ -50,11 +12,11 @@ ul > li.bsky-msg > a {
 ul.note-cards {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 1em 0;
 }
 
 li.note-card {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
 }
 
 li.note-card a {
@@ -63,24 +25,69 @@ li.note-card a {
   align-items: center;
   gap: 1em;
   text-decoration: none;
-  color: #fff;
-  padding: 0.5em;
-  background-color: #333;
-  border-radius: 4px;
+  color: #f0f0f0;
+  padding: 0.75em 1em;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
 li.note-card a:hover {
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(94, 184, 217, 0.4);
+  transform: translateX(4px);
 }
 
 li.note-card img {
-  width: 120px;
+  width: 140px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 8px;
   flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+li.note-card a:hover img {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
 li.note-card span {
-  font-size: 0.9em;
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #f0f0f0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+  li.note-card a {
+    gap: 0.75em;
+    padding: 0.6em 0.8em;
+  }
+
+  li.note-card img {
+    width: 100px;
+  }
+
+  li.note-card span {
+    font-size: 0.85em;
+  }
+}
+
+/* 旧スタイル（互換性維持） */
+ul.bluesky-timeline-item {
+  display: none;
+}
+
+.bluesky-timeline-anchor {
+  font-size: 0.8em;
+  color: #909090;
+  display: block;
+  margin-top: 0.5em;
+}
+
+.bluesky-timeline-anchor:hover {
+  color: #e8a0b8;
 }
