@@ -4,7 +4,7 @@
     if (!container || !anchor) return;
 
     const feedUrl = anchor.getAttribute("feed");
-    const proxyUrl = "https://api.allorigins.win/raw?url=" + encodeURIComponent(feedUrl);
+    const proxyUrl = "https://corsproxy.io/?" + encodeURIComponent(feedUrl);
 
     fetch(proxyUrl)
         .then(res => res.text())

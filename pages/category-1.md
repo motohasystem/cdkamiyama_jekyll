@@ -14,7 +14,7 @@ summary: いつも参加している/参加したことがある子供たち、�
 
 ---
 
-## お知らせ
+## 最近の活動
 
 {%include bsky_announce.html %}
 

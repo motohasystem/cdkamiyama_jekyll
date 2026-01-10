@@ -46,20 +46,27 @@ ul > li.bsky-msg > a {
   margin: 0 auto;
 }
 
-/* noteカード形式 */
+/* noteリスト形式 */
 ul.note-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1em;
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+li.note-card {
+  margin-bottom: 0.5em;
 }
 
 li.note-card a {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
   text-decoration: none;
   color: #fff;
+  padding: 0.5em;
+  background-color: #333;
+  border-radius: 4px;
 }
 
 li.note-card a:hover {
@@ -67,13 +74,13 @@ li.note-card a:hover {
 }
 
 li.note-card img {
-  width: 100%;
-  aspect-ratio: 1;
+  width: 120px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 4px;
+  flex-shrink: 0;
 }
 
 li.note-card span {
   font-size: 0.9em;
-  margin-top: 0.5em;
 }
