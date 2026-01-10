@@ -45,3 +45,35 @@ ul > li.bsky-msg > a {
   width: 100%;
   margin: 0 auto;
 }
+
+/* noteカード形式 */
+ul.note-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+}
+
+li.note-card a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+}
+
+li.note-card a:hover {
+  opacity: 0.8;
+}
+
+li.note-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+li.note-card span {
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
