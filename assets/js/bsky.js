@@ -3,29 +3,26 @@
     const anchor = document.getElementById("bskyrss");
     if (!container || !anchor) return;
 
-    const feedUrl = anchor.getAttribute("feed");
-    const proxyUrl = "https://corsproxy.io/?" + encodeURIComponent(feedUrl);
+    const jsonUrl = anchor.getAttribute("data-feed-json") || "/assets/data/note-feed.json";
 
-    fetch(proxyUrl)
-        .then(res => res.text())
-        .then(str => {
-            const parser = new DOMParser();
-            const xml = parser.parseFromString(str, "application/xml");
-            const items = xml.querySelectorAll("item");
+    fetch(jsonUrl)
+        .then(res => {
+            if (!res.ok) {
+                throw new Error("Failed to fetch feed json: " + res.status);
+            }
+            return res.json();
+        })
+        .then(data => {
+            const items = Array.isArray(data?.items) ? data.items : [];
 
             const list = document.createElement("ul");
             list.className = "note-cards";
 
             Array.from(items).slice(0, 5).forEach(item => {
-                const title = item.querySelector("title")?.textContent || "";
-                const link = item.querySelector("link")?.textContent || "";
-
-                // media:thumbnailはテキストコンテンツとしてURLを持つ
-                let thumbnail = "";
-                const mediaThumbnail = item.getElementsByTagNameNS("http://search.yahoo.com/mrss/", "thumbnail")[0];
-                if (mediaThumbnail) {
-                    thumbnail = mediaThumbnail.textContent || "";
-                }
+                const title = item.title || "";
+                const link = item.link || "";
+                const thumbnail = item.thumbnail || "";
+                if (!title || !link) return;
 
                 const li = document.createElement("li");
                 li.className = "note-card";
@@ -51,5 +48,5 @@
 
             container.appendChild(list);
         })
-        .catch(err => console.error("RSS fetch error:", err));
+        .catch(err => console.error("Feed JSON fetch error:", err));
 })();
