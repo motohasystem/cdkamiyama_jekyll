@@ -1,5 +1,126 @@
 {
-  "generatedAt": null,
+  "generatedAt": "2026-02-07T05:13:37.923158+00:00",
   "source": "https://note.com/cdkamiyama/m/m1284da011111/rss",
-  "items": []
+  "items": [
+    {
+      "title": "太陽の電気であそぶコンピューター（CoderDojo神山 #79 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/nec4feb5b3013",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/249773000/rectangle_large_type_2_0ab849d160932f8cf12987b6c0502e05.png?width=800",
+      "publishedAt": "Sat, 07 Feb 2026 10:51:56 +0900"
+    },
+    {
+      "title": "2026年の『最新テクノロジーで蘇らせる神山伝統の正月飾り』を写真で振り返る",
+      "link": "https://note.com/motohasystem/n/ncafcf971908c",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/243797368/rectangle_large_type_2_a79721d8d3799f9ff32a4842f1797d63.png?width=800",
+      "publishedAt": "Thu, 15 Jan 2026 07:44:28 +0900"
+    },
+    {
+      "title": "正月飾りと新しいパソコンたち（CoderDojo神山 #78 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/ndc961bb56308",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/242710384/rectangle_large_type_2_c2974d49f0c6d36df200a3d73813d306.png?width=800",
+      "publishedAt": "Sat, 10 Jan 2026 11:09:00 +0900"
+    },
+    {
+      "title": "イベント続きの11月（CoderDojo神山 #77 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/n3763ef3a0b46",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/237826625/rectangle_large_type_2_1d35ed0710d399974aa53287d63e99be.png?width=800",
+      "publishedAt": "Sun, 21 Dec 2025 12:29:21 +0900"
+    },
+    {
+      "title": "小学生に向けたAI体験会とAI利用の危険性",
+      "link": "https://note.com/motohasystem/n/n78c42eeb64d8",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/234098254/rectangle_large_type_2_0fd73760a8f62deb3cefb124e045e3a3.png?width=800",
+      "publishedAt": "Fri, 05 Dec 2025 08:12:10 +0900"
+    },
+    {
+      "title": "今年もやるよ！　3Dプリンタで伝統の正月飾りイベント（CoderDojo神山 #76 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/n3c736341fee8",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/228097225/rectangle_large_type_2_5b04df0624d1dec227d1c8f9a6e08c17.png?width=800",
+      "publishedAt": "Sun, 09 Nov 2025 12:48:22 +0900"
+    },
+    {
+      "title": "「バチカン市国って小学校より大きい？」に答えるWebアプリの作成手順",
+      "link": "https://note.com/motohasystem/n/n4280e5622586",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/224921468/rectangle_large_type_2_57e4b87bbb53c7e10c1906630e06eacd.png?width=800",
+      "publishedAt": "Wed, 29 Oct 2025 05:54:50 +0900"
+    },
+    {
+      "title": "いつもの道場ながら次の企画を温める（CoderDojo神山 #75 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/n88159e876998",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/220594262/rectangle_large_type_2_c7a2b070e8f57ca74164134b0e491a3a.png?width=800",
+      "publishedAt": "Tue, 07 Oct 2025 13:53:51 +0900"
+    },
+    {
+      "title": "再びみんなで作った『ゴブリンアドベンチャー』（CoderDojo神山 #74 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/nd3752630accf",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/212081139/rectangle_large_type_2_61c684e20d686da5a2b5d4878a45b602.png?width=800",
+      "publishedAt": "Sun, 31 Aug 2025 17:06:56 +0900"
+    },
+    {
+      "title": "[kintone] 夏休みの宿題に親がグラフを挟んでくる",
+      "link": "https://note.com/motohasystem/n/n8f97895ca313",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/209804309/rectangle_large_type_2_fc7aea2db99ce3b42a464ad4785dac7f.png?width=800",
+      "publishedAt": "Thu, 21 Aug 2025 06:17:39 +0900"
+    },
+    {
+      "title": "ClaudeCodeと一緒にミニゲームを作ろう",
+      "link": "https://note.com/motohasystem/n/n8a7c4615e8bb",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/208404732/rectangle_large_type_2_de13b743a4e707496ba35d1c75807823.png?width=800",
+      "publishedAt": "Thu, 14 Aug 2025 12:28:30 +0900"
+    },
+    {
+      "title": "みんなで作った『ザリガニ大決戦』（CoderDojo神山 #73 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/nac493153e4cf",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/207507611/rectangle_large_type_2_470bb5d07be759109cef6ffbd1bcfd51.png?width=800",
+      "publishedAt": "Sun, 10 Aug 2025 07:02:10 +0900"
+    },
+    {
+      "title": "エアコンの効いた部屋でのんびり遊ぼう（CoderDojo神山 #72 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/nc18c6b5e60c4",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/201937721/rectangle_large_type_2_c9f0f45df1ddff4649864e114790714f.png?width=800",
+      "publishedAt": "Sun, 13 Jul 2025 14:51:06 +0900"
+    },
+    {
+      "title": "神山の子供たちのコンピューターライフ（CoderDojo神山 #71 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/n4189ad33ccea",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/193654588/rectangle_large_type_2_87dd8bb27736d1adf2e72ea6a9571018.png?width=800",
+      "publishedAt": "Tue, 03 Jun 2025 09:31:56 +0900"
+    },
+    {
+      "title": "“触れる”を目指したライフゲーム！　小さな細胞が語るルールの世界",
+      "link": "https://note.com/motohasystem/n/n6b5f8c42b6d7",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/190143870/rectangle_large_type_2_d6815a73159546f381ece60bc722cc81.png?width=800",
+      "publishedAt": "Thu, 15 May 2025 16:46:00 +0900"
+    },
+    {
+      "title": "Youtubeチャンネルの取材となんでもポッドキャスト化するAI",
+      "link": "https://note.com/motohasystem/n/n2b7107b1cba5",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/188400071/rectangle_large_type_2_2267bda8b74d52d8c93f777e52a23786.png?width=800",
+      "publishedAt": "Tue, 06 May 2025 15:53:54 +0900"
+    },
+    {
+      "title": "公開された取材動画をみんなで見ました（CoderDojo神山 #70 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/n9abfe8084d53",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/187773146/rectangle_large_type_2_c0da30e7dcbff27e540a360c4d05b964.png?width=800",
+      "publishedAt": "Sat, 03 May 2025 14:01:39 +0900"
+    },
+    {
+      "title": "Youtubeチャンネルの取材を受けました（CoderDojo神山 #69 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/n631bc62cfc50",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/183693811/rectangle_large_type_2_daa6d9bd4042cbcee757f200696b5918.png?width=800",
+      "publishedAt": "Fri, 11 Apr 2025 18:35:16 +0900"
+    },
+    {
+      "title": "小1から挑戦できる3Dモデリング（CoderDojo神山 #68 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/na035604aa1c2",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/178025288/rectangle_large_type_2_a24c561759b952e41a79e1f8540fd36e.png?width=800",
+      "publishedAt": "Sat, 08 Mar 2025 11:31:48 +0900"
+    },
+    {
+      "title": "「CoderDojo神山」ってどんなところ？ 子どもが主役のプログラミング道場！",
+      "link": "https://note.com/motohasystem/n/n2388741d3839",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/177560113/rectangle_large_type_2_c53677913410eb6318db5e7a794cd4b7.png?width=800",
+      "publishedAt": "Wed, 05 Mar 2025 09:53:37 +0900"
+    }
+  ]
 }
