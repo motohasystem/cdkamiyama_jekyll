@@ -14,10 +14,6 @@ summary: いつも参加している/参加したことがある子供たち、�
 
 ---
 
-## 最近の活動
-
-{%include bsky_announce.html %}
-
 {%include form-parts.html %}
 
 {%include about_materials.md %}

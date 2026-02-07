@@ -51,8 +51,7 @@ summary: はじめて参加する子どもたち、保護者の方へ向けた�
 
 ## 次回の開催日など最新情報
 
-[BlueSky](https://bsky.app/profile/coderdojo.kamiyama.club)や[Facebookページ](https://www.facebook.com/CDKamiyama)でお知らせしてます。よかったらフォローしてください。
+noteでお知らせしてます。よかったらフォローしてください。
 
 {% include bsky_announce.html %}
 
-{% include note.md %}
