@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-03-08T06:15:21.735894+00:00",
+  "generatedAt": "2026-03-08T12:09:48.923142+00:00",
   "source": "https://note.com/cdkamiyama/m/m1284da011111/rss",
   "items": [
+    {
+      "title": "小さな失敗を積み重ねる（CoderDojo神山 #80 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/na31a16be3c1d",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/257507894/rectangle_large_type_2_3a57ac4afbe073379b7b73a73f8f654d.png?width=800",
+      "publishedAt": "Sun, 08 Mar 2026 17:06:07 +0900"
+    },
     {
       "title": "太陽の電気であそぶコンピューター（CoderDojo神山 #79 開催のご報告）",
       "link": "https://note.com/cdkamiyama/n/nec4feb5b3013",
@@ -115,12 +121,6 @@
       "link": "https://note.com/cdkamiyama/n/na035604aa1c2",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/178025288/rectangle_large_type_2_a24c561759b952e41a79e1f8540fd36e.png?width=800",
       "publishedAt": "Sat, 08 Mar 2025 11:31:48 +0900"
-    },
-    {
-      "title": "「CoderDojo神山」ってどんなところ？ 子どもが主役のプログラミング道場！",
-      "link": "https://note.com/motohasystem/n/n2388741d3839",
-      "thumbnail": "https://assets.st-note.com/production/uploads/images/177560113/rectangle_large_type_2_c53677913410eb6318db5e7a794cd4b7.png?width=800",
-      "publishedAt": "Wed, 05 Mar 2025 09:53:37 +0900"
     }
   ]
 }
