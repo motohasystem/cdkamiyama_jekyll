@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-04-12T18:14:57.262203+00:00",
+  "generatedAt": "2026-04-13T00:34:32.607996+00:00",
   "source": "https://note.com/cdkamiyama/m/m1284da011111/rss",
   "items": [
+    {
+      "title": "地球儀モニタで遊ぶvibe coding（CoderDojo神山 #81 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/nf71822d085a3",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/267015513/rectangle_large_type_2_147d62ea110f75c854ea376fa855e276.png?width=800",
+      "publishedAt": "Mon, 13 Apr 2026 08:23:28 +0900"
+    },
     {
       "title": "小さな失敗を積み重ねる（CoderDojo神山 #80 開催のご報告）",
       "link": "https://note.com/cdkamiyama/n/na31a16be3c1d",
@@ -115,12 +121,6 @@
       "link": "https://note.com/cdkamiyama/n/n631bc62cfc50",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/183693811/rectangle_large_type_2_daa6d9bd4042cbcee757f200696b5918.png?width=800",
       "publishedAt": "Fri, 11 Apr 2025 18:35:16 +0900"
-    },
-    {
-      "title": "小1から挑戦できる3Dモデリング（CoderDojo神山 #68 開催のご報告）",
-      "link": "https://note.com/cdkamiyama/n/na035604aa1c2",
-      "thumbnail": "https://assets.st-note.com/production/uploads/images/178025288/rectangle_large_type_2_a24c561759b952e41a79e1f8540fd36e.png?width=800",
-      "publishedAt": "Sat, 08 Mar 2025 11:31:48 +0900"
     }
   ]
 }
