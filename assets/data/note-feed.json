@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-06-09T13:03:32.097480+00:00",
+  "generatedAt": "2026-06-10T00:52:46.985483+00:00",
   "source": "https://note.com/cdkamiyama/m/m1284da011111/rss",
   "items": [
+    {
+      "title": "とつぜん始まるviscuitブーム（CoderDojo神山 #83 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/n35335a13f462",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/284051370/rectangle_large_type_2_936d248e2e6e3e88a18b921fbf0c2603.png?width=800",
+      "publishedAt": "Wed, 10 Jun 2026 05:39:52 +0900"
+    },
     {
       "title": "AIコーディング時代の glue code と mashup",
       "link": "https://note.com/motohasystem/n/nb270881312ed",
@@ -115,12 +121,6 @@
       "link": "https://note.com/motohasystem/n/n6b5f8c42b6d7",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/190143870/rectangle_large_type_2_d6815a73159546f381ece60bc722cc81.png?width=800",
       "publishedAt": "Thu, 15 May 2025 16:46:00 +0900"
-    },
-    {
-      "title": "Youtubeチャンネルの取材となんでもポッドキャスト化するAI",
-      "link": "https://note.com/motohasystem/n/n2b7107b1cba5",
-      "thumbnail": "https://assets.st-note.com/production/uploads/images/188400071/rectangle_large_type_2_2267bda8b74d52d8c93f777e52a23786.png?width=800",
-      "publishedAt": "Tue, 06 May 2025 15:53:54 +0900"
     }
   ]
 }
