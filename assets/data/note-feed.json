@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-08-08T00:17:48.483980+00:00",
+  "generatedAt": "2026-08-08T06:16:15.519734+00:00",
   "source": "https://note.com/cdkamiyama/m/m1284da011111/rss",
   "items": [
+    {
+      "title": "『〇〇で遊びたい！』と声に出すことが大切（CoderDojo神山 #85 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/n42072765f804",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/301466424/rectangle_large_type_2_f3ba1e748514fe59149fefdc13f18a66.png?width=800",
+      "publishedAt": "Sat, 08 Aug 2026 11:03:24 +0900"
+    },
     {
       "title": "AIコーディングとScratchの似ているところ（CoderDojo神山 #84 開催のご報告）",
       "link": "https://note.com/cdkamiyama/n/n54b7eecdf70b",
@@ -115,12 +121,6 @@
       "link": "https://note.com/cdkamiyama/n/nc18c6b5e60c4",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/201937721/rectangle_large_type_2_c9f0f45df1ddff4649864e114790714f.png?width=800",
       "publishedAt": "Sun, 13 Jul 2025 14:51:06 +0900"
-    },
-    {
-      "title": "神山の子供たちのコンピューターライフ（CoderDojo神山 #71 開催のご報告）",
-      "link": "https://note.com/cdkamiyama/n/n4189ad33ccea",
-      "thumbnail": "https://assets.st-note.com/production/uploads/images/193654588/rectangle_large_type_2_87dd8bb27736d1adf2e72ea6a9571018.png?width=800",
-      "publishedAt": "Tue, 03 Jun 2025 09:31:56 +0900"
     }
   ]
 }
