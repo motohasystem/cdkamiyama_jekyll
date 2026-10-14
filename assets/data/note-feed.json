@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-14T06:17:11.267578+00:00",
+  "generatedAt": "2026-10-14T12:15:47.114820+00:00",
   "source": "https://note.com/cdkamiyama/m/m1284da011111/rss",
   "items": [
+    {
+      "title": "オリジナルの漢字を作って遊ぶアプリ「かんじる」（CoderDojo神山 #87 開催のご報告）",
+      "link": "https://note.com/cdkamiyama/n/n352226f1413c",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/324273096/rectangle_large_type_2_a8eb6272ad4df3e51229e723ed86e050.png?width=800",
+      "publishedAt": "Wed, 14 Oct 2026 15:55:21 +0900"
+    },
     {
       "title": "運営費としてSuzuriのアイテム販売はどうだろう？（CoderDojo神山 #86 開催のご報告）",
       "link": "https://note.com/cdkamiyama/n/neb47db0f0ad9",
@@ -115,12 +121,6 @@
       "link": "https://note.com/motohasystem/n/n8a7c4615e8bb",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/208404732/rectangle_large_type_2_de13b743a4e707496ba35d1c75807823.png?width=800",
       "publishedAt": "Thu, 14 Aug 2025 12:28:30 +0900"
-    },
-    {
-      "title": "みんなで作った『ザリガニ大決戦』（CoderDojo神山 #73 開催のご報告）",
-      "link": "https://note.com/cdkamiyama/n/nac493153e4cf",
-      "thumbnail": "https://assets.st-note.com/production/uploads/images/207507611/rectangle_large_type_2_470bb5d07be759109cef6ffbd1bcfd51.png?width=800",
-      "publishedAt": "Sun, 10 Aug 2025 07:02:10 +0900"
     }
   ]
 }
