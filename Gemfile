@@ -10,3 +10,5 @@ gem "jekyll-seo-tag", github: "jekyll/jekyll-seo-tag"
 gem "csv"
 gem "base64"
 gem "bigdecimal"
+# jekyll serve（ローカルプレビュー）に必要。Ruby 3.0 以降は標準添付されない
+gem "webrick"
