@@ -11,8 +11,8 @@ category: home
   <p class="page-summary">
     最新の活動については、
     <a href="{{ page.url_note }}">noteの活動報告</a>
-    と、
-    <a href="{{ page.url_bluesky }}">SNS(bluesky)の情報</a>
+    <!-- と、
+    <a href="{{ page.url_bluesky }}">SNS(bluesky)の情報</a> -->
     をフォローしてください。
     <br />
     <a href="{{ page.url_goods }}">公式グッズの購入</a>
@@ -35,6 +35,10 @@ category: home
     </div>
     {% endif %} {% endfor %}
   </div>
+
+  <h2>開催カレンダー</h2>
+
+  {% include calendar.html %}
 
   <h2>最近の活動</h2>
 

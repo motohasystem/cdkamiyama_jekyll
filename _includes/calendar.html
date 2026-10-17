@@ -1,0 +1,24 @@
+<!-- 開催カレンダー（Googleカレンダー埋め込み）。PCは月表示、スマホは予定リスト表示 -->
+{% assign calendar_src = "4d8dae33fcdfb97aaeb37b288029bee08a7ecd15b5cfc58cfd196656809a7d3d%40group.calendar.google.com" %}
+{% assign calendar_base = "https://calendar.google.com/calendar/embed?ctz=Asia%2FTokyo&hl=ja&showTitle=0&showPrint=0&showCalendars=0&showTz=0&src=" | append: calendar_src %}
+<style>
+  .event-calendar iframe {
+    width: 100%;
+    border: 0;
+  }
+  .event-calendar .calendar-agenda {
+    display: none;
+  }
+  @media (max-width: 600px) {
+    .event-calendar .calendar-month {
+      display: none;
+    }
+    .event-calendar .calendar-agenda {
+      display: block;
+    }
+  }
+</style>
+<div class="event-calendar">
+  <iframe class="calendar-month" src="{{ calendar_base }}&mode=MONTH" height="600" loading="lazy" title="開催カレンダー（月表示）"></iframe>
+  <iframe class="calendar-agenda" src="{{ calendar_base }}&mode=AGENDA" height="450" loading="lazy" title="開催カレンダー（予定リスト）"></iframe>
+</div>
