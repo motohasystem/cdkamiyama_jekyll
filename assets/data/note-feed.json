@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-23T06:17:28.724034+00:00",
+  "generatedAt": "2026-10-23T12:14:16.885045+00:00",
   "source": "https://note.com/cdkamiyama/m/m1284da011111/rss",
   "items": [
+    {
+      "title": "ベアリングが嫌いな子なんていない！ 3Dプリンタ分解チャレンジ",
+      "link": "https://note.com/motohasystem/n/n9a232ed84271",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/327540010/rectangle_large_type_2_17e8291445220df9e6f8b68fad038239.png?width=800",
+      "publishedAt": "Fri, 23 Oct 2026 16:50:12 +0900"
+    },
     {
       "title": "オリジナルの漢字を作って遊ぶアプリ「かんじる」（CoderDojo神山 #87 開催のご報告）",
       "link": "https://note.com/cdkamiyama/n/n352226f1413c",
@@ -115,12 +121,6 @@
       "link": "https://note.com/motohasystem/n/n8f97895ca313",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/209804309/rectangle_large_type_2_fc7aea2db99ce3b42a464ad4785dac7f.png?width=800",
       "publishedAt": "Thu, 21 Aug 2025 06:17:39 +0900"
-    },
-    {
-      "title": "ClaudeCodeと一緒にミニゲームを作ろう",
-      "link": "https://note.com/motohasystem/n/n8a7c4615e8bb",
-      "thumbnail": "https://assets.st-note.com/production/uploads/images/208404732/rectangle_large_type_2_de13b743a4e707496ba35d1c75807823.png?width=800",
-      "publishedAt": "Thu, 14 Aug 2025 12:28:30 +0900"
     }
   ]
 }
