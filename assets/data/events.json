@@ -2,16 +2,6 @@
   "source": "https://calendar.google.com/calendar/ical/4d8dae33fcdfb97aaeb37b288029bee08a7ecd15b5cfc58cfd196656809a7d3d%40group.calendar.google.com/public/basic.ics",
   "events": [
     {
-      "dojo": "hirono",
-      "title": "開催日",
-      "start": "2026-11-07T10:00:00+09:00",
-      "end": "2026-11-07T12:00:00+09:00",
-      "allDay": false,
-      "place": "神山町立広野小学校",
-      "address": "日本、〒771-3201 徳島県名西郡神山町阿野広野２２",
-      "url": ""
-    },
-    {
       "dojo": "kamiyama",
       "title": "開催日（鮎喰川コモン）",
       "start": "2026-11-20T18:00:00+09:00",
