@@ -1,0 +1,44 @@
+name: Deploy to Cloudflare Pages
+
+# master への push と、データ更新ワークフロー（note / 開催予定）がコミットしたときに呼ばれる。
+# GITHUB_TOKEN でのコミットは push イベントを起こさないため、データ更新側から workflow_dispatch で起動する。
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      # ローカル（docker-compose）と同じ Ruby で揃える
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4.8"
+          bundler-cache: true
+
+      - name: Build
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Deploy
+        run: >
+          npx --yes wrangler@4 pages deploy _site
+          --project-name coderdojo-kamiyama
+          --branch master
+          --commit-hash "$GITHUB_SHA"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write # 更新をコミットしたらデプロイを起動するため
 
 jobs:
   update-events-json:
@@ -30,6 +31,8 @@ jobs:
             --output "assets/data/events.json"
 
       - name: Commit and push if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -41,3 +44,4 @@ jobs:
           git commit -m "chore: update events json"
           git pull --rebase
           git push
+          gh workflow run deploy.yml --ref master
