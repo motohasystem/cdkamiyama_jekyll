@@ -28,6 +28,19 @@ jobs:
           ruby-version: "3.4.8"
           bundler-cache: true
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+
+      # wrangler は package-lock.json で固定したバージョンを使う
+      - name: Install deploy tools
+        run: npm ci
+
+      - name: Test (rendering of upstream data)
+        run: npm test
+
       - name: Build
         run: bundle exec jekyll build
         env:
@@ -35,7 +48,7 @@ jobs:
 
       - name: Deploy
         run: >
-          npx --yes wrangler@4 pages deploy _site
+          npx wrangler pages deploy _site
           --project-name coderdojo-kamiyama
           --branch master
           --commit-hash "$GITHUB_SHA"

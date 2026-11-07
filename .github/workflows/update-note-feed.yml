@@ -21,6 +21,14 @@ jobs:
         with:
           python-version: "3.x"
 
+      # バージョンは requirements.txt で固定（Dependabot が更新 PR を出す）
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # 上流に不正なデータが入ったときの取り込み処理のテスト
+      - name: Test
+        run: python -m unittest discover -s tests
+
       - name: Build feed JSON
         run: |
           python scripts/update_note_feed_json.py \

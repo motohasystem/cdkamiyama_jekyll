@@ -1,0 +1,7 @@
+# scripts/update_events_json.py の依存（GitHub Actions でインストール）。Dependabot が更新 PR を出す
+icalendar==7.3.0
+recurring-ical-events==3.8.2
+python-dateutil==2.9.0.post0
+six==1.17.0
+tzdata==2026.6
+x-wr-timezone==2.0.1

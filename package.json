@@ -1,0 +1,12 @@
+{
+  "name": "cdkamiyama-jekyll",
+  "private": true,
+  "description": "デプロイ用ツール（wrangler）のバージョンを固定するためのファイル。サイト本体は Jekyll でビルドする",
+  "scripts": {
+    "deploy": "wrangler pages deploy _site --project-name coderdojo-kamiyama --branch master",
+    "test": "node tests/test_render.js"
+  },
+  "devDependencies": {
+    "wrangler": "4.158.0"
+  }
+}

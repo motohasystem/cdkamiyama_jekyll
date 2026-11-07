@@ -3,9 +3,13 @@
 .jekyll-cache
 .sass-cache
 _site
-Gemfile.lock
+# Gemfile.lock は依存を固定するためコミットする
 
 # mac
 .DS_Store
 # wrangler（Cloudflare）のローカルキャッシュ
 .wrangler/
+
+# Python / Node の生成物
+__pycache__/
+node_modules/

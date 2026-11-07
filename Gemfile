@@ -5,7 +5,7 @@ gemspec
 gem "kramdown-parser-gfm"
 gem "kramdown-syntax-coderay"
 #seo
-gem "jekyll-seo-tag", github: "jekyll/jekyll-seo-tag"
+gem "jekyll-seo-tag", "~> 2.9"
 # Ruby 3.4 で標準ライブラリから外れた gem（jekyll 3.9 / safe_yaml / liquid が require する）
 gem "csv"
 gem "base64"
