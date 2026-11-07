@@ -1,4 +1,5 @@
 $image-dim: 180px;
+$top-image-dim: 140px;
 
 .home {
     display: flex;
@@ -34,6 +35,81 @@ $image-dim: 180px;
         display: flex;
         align-items: center;
         color: $secondary;
+    }
+
+    // 上段の4ブロック（次回の開催日×2、いつものかた、はじめてのかた）を2x2の正方形で並べる
+    .top-blocks {
+        width: 100%;
+        max-width: 640px;
+        margin: 1.5em auto 2em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25em;
+
+        @include mobile {
+            gap: 0.75em;
+        }
+
+        // 各ブロックを正方形に（中身が多いときだけ縦に伸びる）
+        > .category_container,
+        .next-events__card {
+            aspect-ratio: 1 / 1;
+            min-width: 0;
+        }
+
+        .category_container {
+            height: auto;
+            padding: 1.5em 1em;
+            justify-content: center;
+
+            @include mobile {
+                padding: 0.75em 0.5em;
+            }
+        }
+
+        .category_description {
+            h2 {
+                @include mobile {
+                    font-size: 1.1em;
+                    margin: 0.3em 0;
+                }
+            }
+
+            p {
+                @include mobile {
+                    font-size: 0.75em;
+                    line-height: 1.4;
+                    margin: 0;
+                }
+            }
+        }
+
+        .category_image {
+            height: $top-image-dim * 1.15;
+
+            @include mobile {
+                height: auto;
+
+                a,
+                img,
+                a:hover,
+                img:hover {
+                    width: 72px;
+                    height: 72px;
+                }
+            }
+
+            a,
+            img {
+                width: $top-image-dim;
+                height: $top-image-dim;
+
+                &:hover {
+                    width: $top-image-dim * 1.08;
+                    height: $top-image-dim * 1.08;
+                }
+            }
+        }
     }
 
     .category {

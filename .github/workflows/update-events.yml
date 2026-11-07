@@ -1,0 +1,43 @@
+name: Update Events JSON
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-events-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install icalendar recurring-ical-events
+
+      - name: Build events JSON
+        run: |
+          python scripts/update_events_json.py \
+            --ics-url "https://calendar.google.com/calendar/ical/4d8dae33fcdfb97aaeb37b288029bee08a7ecd15b5cfc58cfd196656809a7d3d%40group.calendar.google.com/public/basic.ics" \
+            --output "assets/data/events.json"
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/events.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: update events json"
+          git pull --rebase
+          git push

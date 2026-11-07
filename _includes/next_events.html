@@ -1,0 +1,6 @@
+<!-- 次回の開催日。assets/data/events.json（Googleカレンダーから GitHub Actions で生成）を next_events.js が描画する -->
+<section class="next-events" id="next-events" data-events-json="{{ '/assets/data/events.json' | relative_url }}" hidden>
+  <div class="next-events__card" data-dojo="kamiyama" data-name="CoderDojo神山" hidden></div>
+  <div class="next-events__card" data-dojo="hirono" data-name="CoderDojo神山広野" data-link="{{ page.url_hirono }}" data-link-label="神山広野のサイトへ" hidden></div>
+</section>
+<script src="{{ '/assets/js/next_events.js' | relative_url }}" defer></script>

@@ -1,0 +1,138 @@
+// トップページ上段の「次回の開催日」
+// .home 配下に置き、本文の p / a の既定スタイルより優先させる
+.home .next-events {
+    // 枠は持たず、カードを親の .top-blocks のグリッドに直接並べる
+    display: contents;
+
+    &[hidden],
+    &__card[hidden] {
+        display: none;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 1.5em 1.25em;
+        border-radius: 16px;
+        background: rgba($primary, 0.08);
+        border: 1px solid rgba($primary, 0.35);
+        text-align: center;
+
+        @include mobile {
+            padding: 1.25em 1em;
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+
+    &__name {
+        color: $p_light;
+        font-weight: bold;
+        font-size: 1.05em;
+    }
+
+    &__badge {
+        font-size: 0.8em;
+        padding: 0.15em 0.75em;
+        border-radius: 999px;
+        border: 1px solid rgba($p_text, 0.3);
+        color: $p_text;
+
+        &.is-today {
+            background: $secondary;
+            border-color: $secondary;
+            color: $main-bg-color;
+            font-weight: bold;
+        }
+    }
+
+    &__date {
+        margin: 0.2em 0 0;
+        color: $secondary;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    &__md {
+        font-size: 3em;
+        letter-spacing: 0.02em;
+
+        // スマホの2x2（1枚あたり約160px）でも「11/20（金）」が1行に収まる大きさ
+        @include mobile {
+            font-size: 1.9em;
+        }
+    }
+
+    &__wd {
+        font-size: 1.3em;
+
+        @include mobile {
+            font-size: 0.95em;
+        }
+    }
+
+    &__time {
+        margin: 0.2em 0 0;
+        font-size: 1.3em;
+        color: $p_text;
+    }
+
+    &__place {
+        margin: 0.4em 0 0;
+        color: $p_text_dimmed;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-top: 1em;
+        padding: 0.5em 1.5em;
+        border-radius: 999px;
+        background: $primary;
+        color: $main-bg-color;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+            background: $p_light;
+        }
+    }
+}
+
+// スマホの2x2では1枚が小さいので、名前・時間・会場・ボタンも縮める
+@include mobile {
+    .home .next-events {
+        &__card {
+            padding: 0.75em 0.5em;
+        }
+
+        &__name {
+            font-size: 0.85em;
+        }
+
+        &__badge {
+            font-size: 0.7em;
+        }
+
+        &__time {
+            font-size: 0.95em;
+        }
+
+        &__place {
+            font-size: 0.8em;
+        }
+
+        &__link {
+            margin-top: 0.6em;
+            padding: 0.35em 0.9em;
+            font-size: 0.8em;
+        }
+    }
+}
