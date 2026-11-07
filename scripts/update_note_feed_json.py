@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import argparse
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
@@ -50,8 +49,8 @@ def main():
         xml_bytes = resp.read()
 
     items = parse_items(xml_bytes)
+    # 生成日時は入れない（記事に変化がなければファイルも変わらず、無駄なコミット＝デプロイを出さないため）
     payload = {
-        "generatedAt": datetime.now(timezone.utc).isoformat(),
         "source": args.feed_url,
         "items": items[: args.limit],
     }
