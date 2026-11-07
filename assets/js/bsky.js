@@ -5,6 +5,21 @@
 
     const jsonUrl = anchor.getAttribute("data-feed-json") || "/assets/data/note-feed.json";
 
+    // 許可するホスト（完全一致、またはそのサブドメイン）。画像は CSP の img-src とも揃えること
+    const LINK_HOSTS = ["note.com"];
+    const THUMBNAIL_HOSTS = ["assets.st-note.com"];
+
+    function safeUrl(value, hosts) {
+        if (typeof value !== "string" || !value) return "";
+        try {
+            const url = new URL(value);
+            const hostOk = hosts.some(h => url.hostname === h || url.hostname.endsWith("." + h));
+            return url.protocol === "https:" && hostOk ? url.href : "";
+        } catch (e) {
+            return "";
+        }
+    }
+
     fetch(jsonUrl)
         .then(res => {
             if (!res.ok) {
@@ -20,8 +35,9 @@
 
             Array.from(items).slice(0, 5).forEach(item => {
                 const title = item.title || "";
-                const link = item.link || "";
-                const thumbnail = item.thumbnail || "";
+                // 上流（note）のURLは https かつ想定ドメインのものだけ使う（javascript: 等の混入対策）
+                const link = safeUrl(item.link, LINK_HOSTS);
+                const thumbnail = safeUrl(item.thumbnail, THUMBNAIL_HOSTS);
                 if (!title || !link) return;
 
                 const li = document.createElement("li");
@@ -30,6 +46,7 @@
                 const a = document.createElement("a");
                 a.href = link;
                 a.target = "_blank";
+                a.rel = "noopener";
 
                 if (thumbnail) {
                     const img = document.createElement("img");

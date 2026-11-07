@@ -35,6 +35,10 @@ plugins:
 markdown: kramdown
 remote_theme: ItsMeaga1n/minimal-categorized
 # Exclude these files from production site
+# Cloudflare Pages のヘッダ設定。先頭が _ のファイルは Jekyll が既定で出力しないため明示する
+include:
+  - _headers
+
 exclude:
   - CHANGELOG.md
   - CNAME
@@ -48,6 +52,13 @@ exclude:
   # GitHub Actions（setup-ruby）が gem を置く場所。exclude を書くと Jekyll 既定の除外が効かなくなるため明示する
   - vendor/
   - .wrangler/
+  # 公開不要なもの（取り込みスクリプト・テーマの gemspec・依存定義）
+  - scripts/
+  - tests/
+  - "*.gemspec"
+  - requirements.txt
+  - package.json
+  - package-lock.json
 
 future: true
 timezone: Asia/Tokyo

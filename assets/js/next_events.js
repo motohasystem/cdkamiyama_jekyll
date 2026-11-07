@@ -17,6 +17,14 @@
         };
     }
 
+    function isHttps(value) {
+        try {
+            return typeof value === "string" && new URL(value).protocol === "https:";
+        } catch (e) {
+            return false;
+        }
+    }
+
     function el(tag, className, text) {
         const node = document.createElement(tag);
         if (className) node.className = className;
@@ -49,9 +57,11 @@
         }
 
         // 申込URLが予定の説明にあればそれを、なければ道場ごとのリンクを出す
-        const href = event.url || card.getAttribute("data-link");
+        // カレンダー由来のURLは https のものだけ使う（javascript: 等の混入対策）
+        const eventUrl = isHttps(event.url) ? event.url : "";
+        const href = eventUrl || card.getAttribute("data-link");
         if (href) {
-            const a = el("a", "next-events__link", event.url ? "参加申込はこちら" : card.getAttribute("data-link-label") || "詳しくはこちら");
+            const a = el("a", "next-events__link", eventUrl ? "参加申込はこちら" : card.getAttribute("data-link-label") || "詳しくはこちら");
             a.href = href;
             if (/^https?:/.test(href)) {
                 a.target = "_blank";

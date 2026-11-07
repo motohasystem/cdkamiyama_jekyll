@@ -28,7 +28,7 @@
             <div class="profile">
                 <div class="avatar">
                     <a href="{{ '/about.html' | relative_url }}" >
-                        <img src="{{ site.data.menu.menu_logo | relative_url }}" alt="avatar" onerror="this.style.display='none'">
+                        <img src="{{ site.data.menu.menu_logo | relative_url }}" alt="avatar" data-hide-on-error>
                     </a>
                 </div>
                 <h1>{{ site.data.menu.menu_title }}</h1>
@@ -58,19 +58,3 @@
     </aside>
 {% endif %}
 
-<script>
-    (function() {
-        window.addEventListener("load", () => {
-            const navigation = document.getElementsByClassName("navigation")[0];
-            const selectedCategory = navigation.getElementsByTagName("a");
-            const currCategory = "{{ page.category }}";
-            
-            for(menuItem of selectedCategory) {
-                if(menuItem.getAttribute("category") === currCategory) {
-                    menuItem.classList.add("selected");
-                    return;
-                }
-            }
-        });
-    })();
-</script>

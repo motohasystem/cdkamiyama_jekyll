@@ -2,9 +2,7 @@
 <html lang="ja">
   <head>
     {% if site.data.metaData.cookies.enabled %}
-      <script>
-        {% include cookies.js %}
-      </script>
+      <script src="{{ '/assets/js/cookies.js' | relative_url }}" defer></script>
     {% endif %}
     {% include common-head.html %}
   </head>
