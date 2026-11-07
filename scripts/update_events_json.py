@@ -15,6 +15,8 @@ from zoneinfo import ZoneInfo
 import icalendar
 import recurring_ical_events
 
+from feed_guard import check_count, is_https
+
 JST = ZoneInfo("Asia/Tokyo")
 
 # 会場名にこの文字列を含む予定を、その道場の開催とみなす（上から順に判定、どれにも当たらなければ kamiyama）
@@ -41,8 +43,9 @@ def classify(location):
 
 
 def first_url(text):
-    match = re.search(r"https?://[^\s\"<>]+", text)
-    return match.group(0) if match else ""
+    # 説明文中の最初の https URL（参加申込フォームなど）。http や javascript: は拾わない
+    match = re.search(r"https://[^\s\"<>]+", text)
+    return match.group(0) if match and is_https(match.group(0)) else ""
 
 
 def parse_events(ics_bytes, start, end):
@@ -76,6 +79,8 @@ def main():
     parser.add_argument("--output", required=True)
     parser.add_argument("--days", type=int, default=120, help="何日先までの予定を書き出すか")
     parser.add_argument("--per-dojo", type=int, default=5, help="道場ごとに書き出す件数")
+    parser.add_argument("--min-items", type=int, default=1, help="これ未満なら更新しない")
+    parser.add_argument("--allow-drop", action="store_true", help="前回からの急減を許可する")
     args = parser.parse_args()
 
     req = Request(args.ics_url, headers={"User-Agent": "cdkamiyama-events-updater/1.0"})
@@ -92,6 +97,8 @@ def main():
         counts[ev["dojo"]] = counts.get(ev["dojo"], 0) + 1
         if counts[ev["dojo"]] <= args.per_dojo:
             limited.append(ev)
+
+    check_count(len(limited), args.output, "events", args.min_items, args.allow_drop)
 
     payload = {"source": args.ics_url, "events": limited}
 

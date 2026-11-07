@@ -5,6 +5,8 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
+from feed_guard import check_count, is_https
+
 
 def parse_items(xml_bytes):
     root = ET.fromstring(xml_bytes)
@@ -27,7 +29,10 @@ def parse_items(xml_bytes):
                     thumbnail = (child.attrib.get("url") or "").strip()
                 break
 
-        if title and link:
+        # https 以外のURLは捨てる（javascript: 等の混入対策。描画側の bsky.js でもドメインを検査している）
+        if thumbnail and not is_https(thumbnail):
+            thumbnail = ""
+        if title and is_https(link):
             items.append({
                 "title": title,
                 "link": link,
@@ -42,17 +47,21 @@ def main():
     parser.add_argument("--feed-url", required=True)
     parser.add_argument("--output", required=True)
     parser.add_argument("--limit", type=int, default=20)
+    parser.add_argument("--min-items", type=int, default=1, help="これ未満なら更新しない")
+    parser.add_argument("--allow-drop", action="store_true", help="前回からの急減を許可する")
     args = parser.parse_args()
 
     req = Request(args.feed_url, headers={"User-Agent": "cdkamiyama-feed-updater/1.0"})
     with urlopen(req) as resp:
         xml_bytes = resp.read()
 
-    items = parse_items(xml_bytes)
+    items = parse_items(xml_bytes)[: args.limit]
+    check_count(len(items), args.output, "items", args.min_items, args.allow_drop)
+
     # 生成日時は入れない（記事に変化がなければファイルも変わらず、無駄なコミット＝デプロイを出さないため）
     payload = {
         "source": args.feed_url,
-        "items": items[: args.limit],
+        "items": items,
     }
 
     output_path = Path(args.output)
