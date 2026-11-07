@@ -7,3 +7,5 @@ Gemfile.lock
 
 # mac
 .DS_Store
+# wrangler（Cloudflare）のローカルキャッシュ
+.wrangler/

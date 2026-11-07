@@ -45,6 +45,9 @@ exclude:
   - screenshot.png
   - docs/
   - node_modules
+  # GitHub Actions（setup-ruby）が gem を置く場所。exclude を書くと Jekyll 既定の除外が効かなくなるため明示する
+  - vendor/
+  - .wrangler/
 
 future: true
 timezone: Asia/Tokyo
