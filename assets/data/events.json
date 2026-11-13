@@ -70,6 +70,16 @@
       "place": "鮎喰川コモン",
       "address": "日本、〒771-3310 徳島県名西郡神山町神領大埜地３７４",
       "url": "https://docs.google.com/forms/d/e/1FAIpQLSfCHn5alPP2rVGL3IxwPbfqYajghfjAYi0lL33Kr6VgZfdNBA/viewform"
+    },
+    {
+      "dojo": "hirono",
+      "title": "開催日",
+      "start": "2027-03-13T10:00:00+09:00",
+      "end": "2027-03-13T12:00:00+09:00",
+      "allDay": false,
+      "place": "神山町立広野小学校",
+      "address": "日本、〒771-3201 徳島県名西郡神山町阿野広野２２",
+      "url": ""
     }
   ]
 }
